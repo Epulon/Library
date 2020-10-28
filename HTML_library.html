@@ -221,6 +221,16 @@
 <li>The <b>div</b> element is a block-level element that is often used as a container for other HTML elements.</li>
 <br />
 <li>The <b>Span</b> element defines an inline section of the document (part of line or div)</li>
+<br />
+<li>Other elements:
+<ul>
+<li>IFRAME-Inline frame</li>
+<li>INS-Inserted text</li>
+<li>MAP-Image map</li>
+<li>APPLET-Java applet</li>
+<li>OBJECT-Embeded object</li>
+<li>SCRIPT-Script within HTML document</li>
+</ul>
 </ul>
 
 <div style="background-color:green; color:white; padding:20px;">
@@ -228,6 +238,47 @@
 </div>
 
 <p>Paragraph with <span style="color:red; background-color:grey;">Span</span> section highlighted</p>
+<hr />
+<br />
+
+<h3 align="center" style="color:blue;">Forms</h3>
+<!-- Forms -->
+<br />
+
+<ul>
+<li><b>Forms</b> (form) are used to collect information from the user</li>
+<li><b>Action</b> (action) attribute is used to point to the webpage that will load after the user submits the form</li>
+<li><b>GET</b>-data will be visible on page address</li>
+<li><b>POST</b>-data not visible in page address</li>
+<li>Input types:
+<ul>
+<li><b>text</b>-text box</li>
+<li><b>password</b>-password box</li>
+<li><b>radio</b>-single choice prompt</li>
+<li><b>checkbox</b>-multiple choice prompt</li>
+</ul>
+</ul>
+
+<form method="GET" action="#">
+<input type="text" name="username" />
+<br />
+<input type="password" name="password" />
+
+<br />
+</form>
+
+<form>
+<input type="radio" name="gender" value="male" />Male<br />
+<input type="radio" name="gender" value="female" />Female<br />
+<input type="radio" name="gender" value="politician" />Politician<br />
+</form>
+
+<form method="POST" action="#">
+<input type="checkbox" name="gender" value="male" />Male<br />
+<input type="checkbox" name="gender" value="female" />Female<br />
+<input type="checkbox" name="gender" value="politician" />Politician<br />
+</form>
+
 
 </body>
 
