@@ -251,6 +251,7 @@ Let's see how it reconciles</p>
 <li><b>Action</b> (action) attribute is used to point to the webpage that will load after the user submits the form</li>
 <li><b>GET</b>-data will be visible on page address</li>
 <li><b>POST</b>-data not visible in page address</li>
+<li><b>textarea</b> supports multiple lines of input</li>
 <li>Input types:
 <ul>
 <li><b>text</b>-text box</li>
@@ -284,6 +285,14 @@ Let's see how it reconciles</p>
 <input type="submit" name="submit" value="Pick" />
 </form>
 
+<!-- Contact form -->
+<h3 style="color:green"><i>Contact me</i></h3>
+<form>
+<input type="text" name="name" /><br />
+<input type="email" name="email"/><br />
+<textarea name="message"></textarea><br />
+<input type="submit" value="SEND" class="submit" />
+</form>
 
 </body>
 
