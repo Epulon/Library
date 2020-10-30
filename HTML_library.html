@@ -257,6 +257,7 @@ Let's see how it reconciles</p>
 <li><b>password</b>-password box</li>
 <li><b>radio</b>-single choice prompt</li>
 <li><b>checkbox</b>-multiple choice prompt</li>
+<li><b>Submit</b> button submits form into its action attribute</li>
 </ul>
 </ul>
 
@@ -264,7 +265,8 @@ Let's see how it reconciles</p>
 <input type="text" name="username" />
 <br />
 <input type="password" name="password" />
-
+<br />
+<input type="submit" name="submit" value="Log In" />
 <br />
 </form>
 
@@ -272,12 +274,14 @@ Let's see how it reconciles</p>
 <input type="radio" name="gender" value="male" />Male<br />
 <input type="radio" name="gender" value="female" />Female<br />
 <input type="radio" name="gender" value="politician" />Politician<br />
+<input type="submit" name="submit" value="Choose" />
 </form>
 
 <form method="POST" action="#">
 <input type="checkbox" name="gender" value="male" />Male<br />
 <input type="checkbox" name="gender" value="female" />Female<br />
 <input type="checkbox" name="gender" value="politician" />Politician<br />
+<input type="submit" name="submit" value="Pick" />
 </form>
 
 
