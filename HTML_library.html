@@ -43,7 +43,7 @@
 
 <!-- Image inserting -->
 <p><i>Inserting an image</i></p>
-<img src="barka.jpg" height="200px" width="200px" border="3px" alt="Srdela i vino" />
+<img src="barka.jpg" height="500px" width="500px" border="3px" alt="Srdela i vino" />
 
 <!-- Link inserting -->
 <p><i>Inserting a link:</i><br /></p>
@@ -294,6 +294,47 @@ Let's see how it reconciles</p>
 <input type="submit" value="SEND" class="submit" />
 </form>
 
+<br />
+
+<!-- Colors -->
+<div style="background-color:grey">
+<h3 align="center" style="color:blue; background-color:green">Colors</h3>
+
+<br \>
+
+<font color="green">
+<p>Background and font colors</p>
+<p><b>bgcolor</b> sets background color of the document if used withing <b>body</b> tag</p>
+</font>
+</div>
+
+<br />
+
+<!-- Frames -->
+<h3 align="center" style="color:blue; background-color:grey">Frames</h3>
+
+<br />
+
+<ul>
+<li>Page can be divided in frames using the <b>frame</b> document</li>
+<li><b>frame</b> tag defines one specific window (frame) within a <b>frameset</b></li>
+<li><b>frameset</b> element specifies the number of rows or columns in frameset and their size</li>
+<li><b/>noresize</b> atribute specifies that user cannot resize the frame element</li>
+<li>Frame content should be defined using the <b>src</b> attribute</li>
+<li><b>noframe</b> element provides a way for browsers that do not support the frames to view the page</li>
+</ul>
+
+<frameset cols="25%,50%,25%">
+<frame src="a.htm" />
+<frame src="b.htm" />
+<frame src="c.htm" />
+<noframes>No frames supported</noframes>
+</frameset>
+
+<img src="barka.jpg" alt="srdela i vino" width="500" height="500">
+
 </body>
 
 </html>
+
+
