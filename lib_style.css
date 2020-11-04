@@ -1,0 +1,18 @@
+body {
+  background-image: url(/home/epulon/Documents/Git/media/wiki_galaxy.jpg);
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:center;
+  background-attachment:fixed;
+  min-height: 100%;
+}
+h3 {
+  color:brown;
+  background-color: grey;
+  text-align:center;
+  opacity: 90%
+}
+div {
+  background-color:lightgrey;
+  opacity: 30%;
+}
