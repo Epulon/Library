@@ -1,0 +1,8 @@
+/*CSS Library*/
+
+/*Basics*/
+/*Selectors*/
+.something { /*Selects class something*/ }
+#something { /*Selects id something*/ }
+* { /*Selects all elements*/ }
+element { /*Selects element (example p or div)*/ }
