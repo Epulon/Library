@@ -1,0 +1,53 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+/*Body*/
+body {
+  background-color: black ;
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:center;
+  background-attachment:fixed;
+  min-height: 100%;
+}
+
+/*Title*/
+.title {
+  font-family: "Lucida Console", Courier, Monospace;
+  text-align: center;
+  color: #8080ff;
+}
+
+/*TopMenu bg color*/
+.topmenu {
+  background-color: #333333;
+  overflow: hidden;
+}
+
+/*TopMenu Links*/
+.topmenu a {
+  float: left;
+  display: block;
+  color: #8080ff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/*Hover reactions*/
+.topmenu a:hover {
+  background-color: #a6a6a6;
+}
+
+/*Active current page*/
+.topmenu a.active {
+  background-color: #a6a6a6;
+}
+
+/*Hide link for small screens*/
+.topnav .icon {
+  display: none;
+}
