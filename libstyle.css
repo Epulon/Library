@@ -1,0 +1,125 @@
+* {
+	overflow: hidden;
+	background-color: #000000;
+	margin: 0;
+}
+
+.title {
+	text-align: center;
+	font-family: sans-serif,cursive,serif;
+	color: #6666ff;
+	overflow: hidden;
+	font-size: x-large;
+	padding: 0px;
+}
+
+/* **********TOP TAB STYLE*********** */
+.tab {
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	background-color: #333;
+	display: table;
+	width: 100%;
+	text-align: center;
+}
+
+/* Buttons style */
+.tab button {
+	background-color: inherit;
+	float: none;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 14px 16px;
+	transition: 0.3s;
+	color: grey;
+}
+
+/* Buttons on hoover */
+.tab button:hover {
+	background-color: black;
+}
+
+/* Create active/current tablink class */
+.tab button.active {
+	background-color: black;
+}
+
+/* Tab style */
+.tabcontent {
+	display: none;
+	padding: 6px 12px;
+	color: grey;
+}
+
+/* Fade tab content */
+.tabcontent {
+	animation:fadeEffect 1s; /*Fade effect takes 1 second */
+}
+
+/* Modules Tab */
+.modules {
+	display: none;
+	color: grey;
+}
+
+/*Go from zero to full opacity */
+@keyframes fadeEffect {
+	from {opacity:0;}
+	to {opacity:1;}
+}
+
+.modtab {
+	float: left;
+}
+
+/* ***********SIDE TAB STYLE********** */
+
+/* Dropdown Button */
+.dropbtn {
+	background-color: #4caf50;
+	color: white;
+	padding: 16px;
+	font-size: 16px;
+	border: none;
+}
+
+/* The <div> container needed to position dropdown content */
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+
+/* Dropdown content-hidden by default */
+.dropcontent {
+	display: none;
+	position: absolute;
+	background-color: #f1f1f1;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+
+/* Links inside dropdown */
+.dropcontent a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+
+/* Links hoover color */
+.dropcontent a:hover {
+	background-color: #ddd;
+}
+
+/* Show dropdown on hoover */
+.dropdown:hover .dropcontent {
+	display: block;
+}
+
+/* Bg color of drop button when content is shown */
+.dropdown:hover .dropbtn {
+	background-color: #3e8e41;
+}

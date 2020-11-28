@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!--Page Title-->
+  <title>DT032</title>
+  <meta charset="UTF-8">
+
+  <!--Setting up width for mobile browsers-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--Link to style CSS-->
+  <link rel="stylesheet" href="dtstyle.css"/>
+
+</head>
+
+<body>
+
+  <!--Title-->
+  <div class="title">
+    <p>TUD-Civil Engineering Part Time</br>DT032</p>
+  </div>
+
+<!-- TOP TAB -->
+<!-- Tab links -->
+<div class="tab">
+  <button class="tablinks" onclick="openTab(event,'Home')" id="defaultOpen">Home</button> <!--Default tab-->
+  <button class="tablinks" onclick="openTab(event,'News')">News</button>
+  <button class="tablinks" onclick="openTab(event,'About')">About</button>
+  <button class="tablinks" onclick="openTab(event,'Contact')">Contact</button>
+  <button class="tablinks" onclick="myFunction()" style="float:left">Modules</button>
+</div>
+
+<!-- Tab content -->
+<div id="Home" class="tabcontent">
+  </br>
+<p>This document was mostly created during Thursday evening lectures, as one has to keep himself awake after full day at work, and every second Friday, as there is only so much Math one can absorb in a day</p>
+</div>
+
+<div id="News" class="tabcontent">
+	<h3><u>News</u></h3>
+	<p>27/11/20-One major issue with this document is that it doesn't appear to load CSS file when opened on Android. At the moment I am too lazy to dig deeper into this and luckily there are so many other issues I can focus on so I can freely ignore this particular one.</p>
+	<br />
+	<p>28/11/20-Added some ramblings in the home tab after unsuccesfully tying to import external text file in a presentable and simple manner.</p>
+</div>
+
+<div id="About" class="tabcontent">
+	<h3>About</h3>
+	<p>General info on page, its contents and people involved</p>
+</div>
+
+<div id="Contact" class="tabcontent">
+  <h3>Contact</h3>
+	<p>Contact info</p>
+</div>
+
+<div id="Modules" class="modules">
+  <div class="dropdown">
+    <div id="myDrop" class="dropcont">
+      <a href="#">Engineering Math 1</a>
+      <a href="#">Computing 1</a>
+      <a href="#">Engineering Science 1</a>
+      <a href="#">Building Technology</a>
+      <a href="#">CAD</a>
+    </div>
+  </div>
+</div>
+<!-- Javascript -->
+
+<!-- Top Tab -->
+<script>
+function openTab(evt, tabName) {
+	//Declare all variables
+	var i, tabcontent, tablinks;
+
+	// Get all elements with class tabcontent and hide them
+	tabcontent = document.getElementsByClassName("tabcontent");
+	for ( i = 0; i < tabcontent.length; i++) {
+	tabcontent [i].style.display = "none";
+	}
+
+	//Get all elements with class "tablinks" and remove the class active
+	tablinks = document.getElementsByClassName ("tablinks");
+	for (i = 0; i < tablinks.length; i++) {
+		tablinks [i].className = tablinks[i].className.replace( "active", "");
+	}
+
+	// Show the current tab and add an "active" class to the button that opened the tab
+	document.getElementById(tabName) .style.display = "block";
+	evt.currentTarget.className += " active";
+	}
+
+  // Default tab
+  document.getElementById("defaultOpen").click();
+
+</script>
+
+</body>
+
+</html>
