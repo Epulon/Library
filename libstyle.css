@@ -1,5 +1,4 @@
 * {
-	overflow: hidden;
 	background-color: #000000;
 	margin: 0;
 }
@@ -15,19 +14,14 @@ a {
 /***********Change default bullets color in list***********/
 ul {
 	list-style: none; /*Remove default style*/
-	padding:0;
-	margin:0;
-}
-
-li{
-	padding-left:16px;
 }
 
 li:before {
 	content:"\2022"; /* \2022 is the CSS code for a bullet*/
 	color: grey;
 	font-weight:bold;
-	display:inline-block; /* Following 3 lines are needed for space */
+	/* Following 3 lines are needed for space */
+	display:inline-block;
 	width:1em;
 	margin-left:-1em;
 }
@@ -71,8 +65,12 @@ li:before {
 }
 
 .code {
-	text-align: center;
+	margin-left: 50px;
 	color:#6666ff;
+}
+
+.inscode {
+	color: #6666ff;
 }
 
 /* Create active/current tablink class */

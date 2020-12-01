@@ -29,6 +29,7 @@
   <button class="tablinks" onclick="openTab(event,'About')">About</button>
   <button class="tablinks" onclick="openTab(event,'Contact')">Contact</button>
   <button class="tablinks" onclick="openTab(event,'Javascript')" style="float:left">Javascript</button>
+  <button class="tablinks" onclick="openTab(event,'Notes')" style="float:right">Notes</button>
 </div>
 
 <!-- Tab content -->
@@ -41,6 +42,8 @@
 <div id="News" class="tabcontent">
   <br />
 	<h3><u>News</u></h3>
+  <br />
+  <p>30/12/20-Working on JavaScript section, stuck on aligning bulletpoints after changing their color</p>
   <br />
   <p>28/11/20-Added some ramblings in the home tab after unsuccesfully tying to import external text file in a presentable and simple manner.</p>
   <br />
@@ -69,28 +72,68 @@
     Webpage: You are at it
   </adress>
 </div>
-
+<!----------------------------JAVASCRIPT---------------------------->
 <div id="Javascript" class="tabcontent">
   <br />
-  <h3 align="center"><i><u><b>Javascript</b></u></i></h3>
+  <h3 align="center"><i><u><b>JavaScript</b></u></i></h3>
   <br />
   <p>First section for the most part follows <a target="_blank" href="https://www.sololearn.com/">SoloLearn's</a> tutorial on JavaScript</p>
   <br/>
   <h4><i><u>Basics</u></i></h4>
   <br/>
   <ul>
-    <li>Javascript is inserted in HTML document between <span class="code">&lt;script&gt;</span> and <span class="code">&lt;/script&gt;</span> tags.</p>
+    <li>Javascript is inserted in HTML document between <span class="inscode">&lt;script&gt;</span> and <span class="inscode">&lt;/script&gt;</span> tags.</p>
     <br/>
     <li>To get Javascript to print output within HTML document:</li>
       <p class="code">document.write("Something, something, complete.")</p>
     <br/>
-    <li>For <i>web console</i> output function <span class="code">console.log()</span> is used. Example:</li>
+    <li>For <i>web console</i> output function <span class="inscode">console.log()</span> is used. Example:</li>
       <p class="code">console.log("Hello console")</p>
     <br />
-  	<li><i>Variables</i> are containers for storing data. <br />For example assigning value 10 to variable x</li>
-  		<p class="code"> var x = 10;</p>
+  	<li><i>Variables</i> are containers for storing data.</li>
+      <ul>
+        <li>For example assigning value 10 to variable x</li>
+        <p class="code"> var x = 10;</p>
+        <script>
+          var x = "ex1";
+            console.log(x);
+
+            x = "egg";
+            console.log(x);
+
+            x = 16;
+            console.log(x);
+            </script>
+          <li>For further example see console/code ex1.</li>
+          <li>Some naming rules for variables:</li>
+            <ul>
+              <li>JavaScript variables are case sensitive. Var x and var X are different variables</li>
+              <li>First char. has to be a letter, underscore (_) or dollar ($)</li>
+              <li>No spaces</li>
+              <li>No math operators (* / + -)</li>
+              <li>No special char (# %)</li>
+            </ul>
+      </ul>
+    <br />
+    <li><i>Comments</i> in JavaScript are placed between <span class="inscode">/*</span> and <span class="inscode">*/</span> or after <span class="inscode">//</span> for single line comments.</li>
+    <li><i>Data types</i>:</li>
+      <ul>
+        <li>Numbers: <span class="inscode">var num = 12;</span> or <span class="inscode">var price = 42.68;</span></li>
+      </ul>
   </ul>
 </div>
+<!----------------------------FINISHED---------------------------->
+
+<div id="Notes" class="tabcontent">
+  <br />
+  <h3 align="center"><i><u><b>Notes</b></u></i></h3>
+  <br />
+  <ul>
+    <li>Parallax Scrolling</li>
+  </ul>
+</div>
+
+
 <!-- Javascript -->
 
 <!-- Top Tab -->
