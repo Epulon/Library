@@ -116,13 +116,16 @@
       </ul>
     <br />
     <li><i>Comments</i> in JavaScript are placed between <span class="inscode">/*</span> and <span class="inscode">*/</span> or after <span class="inscode">//</span> for single line comments.</li>
+    <br/>
     <li><i>Data types</i>:</li>
       <ul>
         <li>Numbers: <span class="inscode">var num = 12;</span> or <span class="inscode">var price = 42.68;</span></li>
       </ul>
+    <br />
   	<li><i>Strings</i> are basically text wrapped in quotes: </li>
   			<p class="code"> var = name "Mirsad";<p>
-  	<li><i>Backslash escape character</i> used for putting quotes or other special characters within a string: </li>
+    <br />
+    <li><i>Backslash escape character</i> used for putting quotes or other special characters within a string: </li>
   		<ul>
   			<li> class="inscode"> var sayHello = 'Hello, I am a \"programmer\"!'</li>
   			<li>Some other uses:</li>
@@ -137,9 +140,11 @@
   				<li>\f - Form feed</li>
   			</ul>
   		</ul>
-  	<li><i>Boolean</i> data types are usefull when there are only two possible values, 1 or 0, true or false....</li>
+    <br />
+    <li><i>Boolean</i> data types are usefull when there are only two possible values, 1 or 0, true or false....</li>
   		<p class="code">var isActive = true;<br/>var isChristmas = false;</p>
-  	<li><i>Arithmetic operators</i>, JavaScript uses standard arithmetic operators:</li>
+    <br />
+    <li><i>Arithmetic operators</i>, JavaScript uses standard arithmetic operators:</li>
   		<ul>
   			<li>+ Addition</li>
   			<li>- Substraction</li>
@@ -149,8 +154,10 @@
   			<li>++ Increment (ie. var a=10, a++ -> a=11)</li>
   			<li>-- Decrement (ie. var a=10, a-- -> a=9</li>
   		</ul>
+    <br />
   	<li><i>Assignment Operators</i> are used to assign values to JavaScript variables.</li>
-  		<table class="tables">
+      <br />
+      <table class="tables">
   			<tr>
   				<th>Operator</th>
   				<th>Example</th>
@@ -187,6 +194,58 @@
   				<td>x=x%y</td>
   			</tr>
   		</table>
+    <br />
+    <li><i>Comparison Operators</i> are used to check if variables or values are different<br />-Response can be either <b><i>true</i></b> or <b><i>false</i></b>.<br />-They only work when comparing same data types (numbers with numbers, strings with strings...)</li>
+      <p class="code">var num = 10;</p>
+      <p class="code">num == 8;</p>
+      <p class="offset">Returns-false</p>
+      <table class="table">
+        <tr>
+          <th>Operator</th>
+          <th>Description</th>
+          <th>Example</th>
+        </tr>
+        <tr>
+          <td>==</td>
+          <td>Equal to</td>
+          <td>5 == 10 false</td>
+        </tr>
+        <tr>
+          <td>===</td>
+          <td>Identical (equal<br />and of same type)</td>
+          <td>5 === 10 false</td>
+        </tr>
+        <tr>
+          <td>!=</td>
+          <td>Not equal to</td>
+          <td>5 != 10 true</td>
+        </tr>
+        <tr>
+          <td>!==</td>
+          <td>Not identical</td>
+          <td>10 !== 10 false</td>
+        </tr>
+        <tr>
+          <td>></td>
+          <td>Greater than</td>
+          <td>10 > 5 true</td>
+        </tr>
+        <tr>
+          <td>>=</td>
+          <td>Greater than<br />or equal to</td>
+          <td>10 >= 5 true</td>
+        </tr>
+        <tr>
+          <td><</td>
+          <td>Less than</td>
+          <td>10 < 5 false</td>
+        </tr>
+        <tr>
+          <td><=</td>
+          <td>Less than<br />or equal to</td>
+          <td>10 <= 5 false</td>
+        </tr>
+      </table>
   </ul>
 </div>
 <!----------------------------FINISHED---------------------------->

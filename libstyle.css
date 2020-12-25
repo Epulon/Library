@@ -68,7 +68,9 @@ li:before {
 	margin-left: 50px;
 	color:#6666ff;
 }
-
+.offset {
+	margin-left: 50px;
+}
 .inscode {
 	color: #6666ff;
 }
@@ -98,6 +100,7 @@ li:before {
 
 table {
 	border: 2px solid grey;
+	margin-left: 50px;
 }
 th {
 	border: 1px solid grey;
